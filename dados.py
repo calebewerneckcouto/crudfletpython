@@ -53,7 +53,7 @@ def main(page: ft.Page):
     def on_submit(e):
         create_user(nome.value, email.value, cpf.value, login.value, senha.value, phone.value, birthdate.value)
         update_user_list()
-        page.controls = page.controls[:-7]  # Remove inputs after submission
+        page.controls = page.controls[:-7]  
 
     submit_button = ft.ElevatedButton(text="Cadastrar", on_click=on_submit)
 
